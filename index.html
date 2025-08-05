@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beatriz Palacios - Maquiadora Profissional</title>
+    <meta
+      name="description"
+      content="Portfólio de Beatriz Palacios, maquiadora especialista em maquiagem social para eventos e fotos. Atendimento a domicílio."
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "brand-wine": "#8a2d57",
+              "brand-text": "#2c2c2c",
+              "brand-light": "#fdfbfb",
+              "brand-pink": "#d9a2ad",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+
+  <body class="bg-brand-light text-brand-text">
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+      <nav
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="text-xl font-bold text-brand-wine"
+          >Beatriz Palacios</a
+        >
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="#sobre" class="hover:text-brand-wine transition-colors"
+            >Sobre</a
+          >
+          <a href="#servicos" class="hover:text-brand-wine transition-colors"
+            >Serviços</a
+          >
+          <a href="#portfolio" class="hover:text-brand-wine transition-colors"
+            >Portfólio</a
+          >
+          <a
+            href="#contato"
+            class="bg-brand-wine text-white px-4 py-2 rounded-full hover:bg-opacity-80 transition-colors"
+            >Fale Comigo</a
+          >
+        </div>
+        <button id="mobile-menu-button" class="md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-brand-wine"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </nav>
+      <div id="mobile-menu" class="hidden md:hidden">
+        <a href="#sobre" class="block py-2 px-8 text-sm hover:bg-brand-pink/20"
+          >Sobre</a
+        >
+        <a
+          href="#servicos"
+          class="block py-2 px-8 text-sm hover:bg-brand-pink/20"
+          >Serviços</a
+        >
+        <a
+          href="#portfolio"
+          class="block py-2 px-8 text-sm hover:bg-brand-pink/20"
+          >Portfólio</a
+        >
+        <a
+          href="#contato"
+          class="block py-2 px-8 text-sm hover:bg-brand-pink/20"
+          >Fale Comigo</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <section
+        id="hero"
+        class="container mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center"
+      >
+        <div class="md:w-1/2 text-center md:text-left">
+          <h1
+            class="text-4xl md:text-5xl font-bold text-brand-text leading-tight"
+          >
+            A arte da maquiagem, a beleza da sua essência.
+          </h1>
+          <p class="mt-4 text-lg">
+            Maquiagem profissional que celebra sua identidade em cada detalhe.
+            Para eventos, fotos e momentos especiais.
+          </p>
+          <a
+            href="#contato"
+            class="mt-8 inline-block bg-brand-wine text-white font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition-transform hover:scale-105"
+            >Agendar um horário</a
+          >
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0">
+          <img
+            src="assets/images/BP3.jpeg"
+            alt="Maquiadora Beatriz Palacios"
+            class="rounded-lg shadow-xl mx-auto border-4 border-brand-pink/50"
+          />
+        </div>
+      </section>
+
+      <section id="sobre" class="bg-white py-16 md:py-24">
+        <div class="container mx-auto px-6">
+          <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/3">
+              <img
+                src="assets/images/BP3.jpeg"
+                alt="Foto profissional de Beatriz Palacios"
+                class="rounded-full shadow-lg mx-auto w-64 h-64 object-cover"
+              />
+            </div>
+            <div class="md:w-2/3">
+              <h2 class="text-3xl font-bold text-brand-text mb-4">
+                Prazer, me chamo Beatriz Palacios
+              </h2>
+
+              <p class="mb-4 text-lg">
+                Sou maquiadora e estudante no curso superior de Estética e
+                Cosmética. Há 2 anos, iniciei meus estudos específicos na área
+                de maquiagem, pela qual eu sou apaixonada!
+              </p>
+              <p>
+                Minha missão é usar a maquiagem como uma ferramenta de expressão
+                e autoconfiança, realçando a beleza única de cada pessoa para
+                que se sintam incríveis em suas próprias peles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicos" class="py-16 md:py-24">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-3xl font-bold text-brand-text mb-4">Serviços</h2>
+          <p class="max-w-2xl mx-auto mb-10">
+            Ofereço um serviço de maquiagem social profissional, pensado para
+            momentos especiais.
+          </p>
+          <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div
+              class="bg-white p-8 rounded-lg shadow-md border-t-4 border-brand-wine"
+            >
+              <h3 class="text-2xl font-bold text-brand-wine mb-2">
+                Maquiagem para Eventos e Fotos
+              </h3>
+
+              <p>
+                Trabalho com a maquiagem profissional social para eventos ou
+                fotos. Ideal para formaturas, casamentos, ensaios fotográficos e
+                qualquer ocasião que peça uma produção impecável.
+              </p>
+            </div>
+            <div
+              class="bg-white p-8 rounded-lg shadow-md border-t-4 border-brand-wine"
+            >
+              <h3 class="text-2xl font-bold text-brand-wine mb-2">
+                Atendimento a Domicílio
+              </h3>
+
+              <p>
+                Para sua maior comodidade, o atendimento é feito a domicílio.
+                Levo todo o material profissional até você, garantindo conforto
+                e uma experiência personalizada.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="bg-white py-16 md:py-24">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center text-brand-text mb-12">
+            Registros de Produções
+          </h2>
+
+          <h3 class="text-2xl font-bold text-center text-brand-wine mb-8">
+            Delineados Gráficos
+          </h3>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-16"
+          >
+            <div class="group overflow-hidden rounded-lg shadow-lg">
+              <img
+                src="https://i.ibb.co/mHq3gD4/placeholder-portfolio-1.jpg"
+                alt="Exemplo de Delineado Gráfico"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="group overflow-hidden rounded-lg shadow-lg">
+              <img
+                src="https://i.ibb.co/yY1kH1f/placeholder-portfolio-2.jpg"
+                alt="Exemplo de Delineado Gráfico"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="group overflow-hidden rounded-lg shadow-lg">
+              <img
+                src="https://i.ibb.co/3W2W3ky/placeholder-portfolio-3.jpg"
+                alt="Exemplo de Delineado Gráfico"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+          </div>
+
+          <h3 class="text-2xl font-bold text-center text-brand-wine mb-8">
+            Pele Madura
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="group overflow-hidden rounded-lg shadow-lg">
+              <img
+                src="https://i.ibb.co/3W2W3ky/placeholder-portfolio-3.jpg"
+                alt="Exemplo de Maquiagem em Pele Madura"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="group overflow-hidden rounded-lg shadow-lg">
+              <img
+                src="https://i.ibb.co/mHq3gD4/placeholder-portfolio-1.jpg"
+                alt="Antes e Depois de Maquiagem em Pele Madura"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="group overflow-hidden rounded-lg shadow-lg">
+              <img
+                src="https://i.ibb.co/yY1kH1f/placeholder-portfolio-2.jpg"
+                alt="Exemplo de Maquiagem em Pele Madura"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="bg-brand-wine text-white py-16 md:py-24">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-3xl font-bold mb-4">Entre em Contato</h2>
+          <p class="max-w-2xl mx-auto mb-8">
+            Acesse meu Instagram para mais exemplos ou entre em contato pelo
+            link abaixo para agendar seu horário!
+          </p>
+          <a
+            href="https://www.instagram.com/biapalaciosmakeup/"
+            target="_blank"
+            class="inline-block bg-white text-brand-wine font-bold py-4 px-10 rounded-full hover:bg-brand-pink transition-colors hover:scale-105 transform"
+          >
+            Fale Comigo Aqui
+          </a>
+          <p class="mt-8 text-lg">@biapalaciosmakeup</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-brand-text text-white text-center py-6">
+      <p>&copy; 2025 Beatriz Palacios. Todos os direitos reservados.</p>
+      <p class="text-sm text-gray-400">
+        Desenvolvido com ❤️ por Gabriel Campelo
+      </p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
